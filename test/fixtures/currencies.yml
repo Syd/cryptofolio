@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  symbol: MyString
+  price_btc: 1.5
+  name: MyString
+  price_usd: 1.5
+  change_1h: 1.5
+  change_24h: 1.5
+
+two:
+  symbol: MyString
+  price_btc: 1.5
+  name: MyString
+  price_usd: 1.5
+  change_1h: 1.5
+  change_24h: 1.5
