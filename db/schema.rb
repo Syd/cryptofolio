@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171216115313) do
+ActiveRecord::Schema.define(version: 20171217065516) do
 
   create_table "currencies", force: :cascade do |t|
     t.string "symbol"
@@ -21,6 +21,16 @@ ActiveRecord::Schema.define(version: 20171216115313) do
     t.float "change_24h"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "trades", force: :cascade do |t|
+    t.string "uuid"
+    t.float "paid"
+    t.float "price"
+    t.datetime "opened"
+    t.datetime "closed"
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_trades_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

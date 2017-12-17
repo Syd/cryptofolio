@@ -6,8 +6,8 @@ class CreateTrades < ActiveRecord::Migration[5.1]
       t.float :price
       t.datetime :opened
       t.datetime :closed
+      t.belongs_to :user, index:true
 
-      t.timestamps
     end
   end
 end
