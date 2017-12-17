@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uuid: MyString
+  paid: 1.5
+  price: 1.5
+  opened: 2017-12-17 06:55:16
+  closed: 2017-12-17 06:55:16
+
+two:
+  uuid: MyString
+  paid: 1.5
+  price: 1.5
+  opened: 2017-12-17 06:55:16
+  closed: 2017-12-17 06:55:16

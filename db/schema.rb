@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171214141738) do
+ActiveRecord::Schema.define(version: 20171216115313) do
+
+  create_table "currencies", force: :cascade do |t|
+    t.string "symbol"
+    t.float "price_btc"
+    t.string "name"
+    t.float "price_usd"
+    t.float "change_1h"
+    t.float "change_24h"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
